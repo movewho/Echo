@@ -4,9 +4,11 @@
 
 [![Build Status](https://travis-ci.org/dkakashi69/Echo.svg?branch=master)](https://travis-ci.org/dkakashi69/Echo)
 
-A music app made with React + Redux + Nodejs
-demo video: (https://www.youtube.com/watch?v=knqfJlnTjtQ)
-visit website: https://echo.brandly.vn/
+### A music app made with React + Redux + Nodejs
+
+- visit website: https://echo.brandly.vn/
+- demo video: (https://www.youtube.com/watch?v=knqfJlnTjtQ)
+
 ![image](https://user-images.githubusercontent.com/20469909/41728104-2b752300-75a0-11e8-9caf-3869eaf41c20.png)
 
 ![image](https://user-images.githubusercontent.com/20469909/41728185-5a3e2380-75a0-11e8-8356-fc0a810934eb.png)
