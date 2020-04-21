@@ -6,7 +6,7 @@
 
 A music app made with React + Redux + Nodejs
 demo video: (https://www.youtube.com/watch?v=knqfJlnTjtQ)
-
+visit website: https://echo.brandly.vn/
 ![image](https://user-images.githubusercontent.com/20469909/41728104-2b752300-75a0-11e8-9caf-3869eaf41c20.png)
 
 ![image](https://user-images.githubusercontent.com/20469909/41728185-5a3e2380-75a0-11e8-8356-fc0a810934eb.png)
