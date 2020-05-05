@@ -160,8 +160,10 @@ PageScraper.prototype.get = function () {
           if (outputKey === 'id' || outputKey === 'alias') {
             // get the song id and alias
             const match = /\/([0-9A-Za-z_-]+)\/(\w+)\.html$/.exec(this.attr($el, attr));
-            const [, alias, id] = match;
-            doc[outputKey] = outputKey === 'id' ? id : alias;
+            if (match){
+              const [, alias, id] = match;
+              doc[outputKey] = outputKey === 'id' ? id : alias;
+            }
           } else {
             doc[outputKey] = this.attr($el, attr, manipulateFunc);
           }

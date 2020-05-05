@@ -16,15 +16,7 @@ export function fetchSong(name, id) {
 
     axios.get(`/api/media/song?name=${name}&id=${id}`)
     .then(resp => {
-      const url = resp.data;
-      return axios.get(`https://mp3.zing.vn/xhr/${url}`)
-    })
-    .then(({ data: { data } }) => {
-      axios.get(data.lyric)
-        .then(({ data: lrcString }) => {
-          data.lyric = lrcParser(lrcString).scripts;
-        })
-        .catch(err => console.log(err));
+      const data = resp.data;
       data.cover = data.artist.cover;
       const ids = {
         songId: data.id,
@@ -43,7 +35,7 @@ export function fetchSong(name, id) {
       console.log(err);
 
       dispatch({ type: types.FETCH_SONG_FAILURE });
-      browserHistory.push('/notfound/song');
+      // browserHistory.push('/notfound/song');
     });
   };
 }
